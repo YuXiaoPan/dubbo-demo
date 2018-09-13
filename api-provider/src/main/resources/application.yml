@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: dubbo-api-provider1
+dubbo:
+  registry:
+    protocol: zookeeper
+    address: localhost:2181
+    id: lin-registry-1
+  application:
+    name: dubbo-api-provider-demo1
+    id: dubbo-api-provider-id1
+    qos-enable: true
+    qos-port: 22222
+  scan:
+    basePackages: me.peyppicp.service.api.impl
+  protocols:
+    protocol:
+      name: dubbo
+      id: dubbo
+      status: server
+demo:
+  service:
+    version: 1.0
