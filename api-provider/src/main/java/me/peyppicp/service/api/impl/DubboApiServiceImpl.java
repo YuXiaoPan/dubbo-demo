@@ -8,12 +8,7 @@ import me.peyppicp.api.DubboApiService;
  * @date 2018/9/12
  * @email peyppicp.pan@kikatech.com
  */
-@Service(
-//        version = "${demo.service.version}",
-//        application = "${dubbo.application.id}",
-//        protocol = "${dubbo.protocol.id}",
-//        registry = "${dubbo.registry.id}"
-)
+@Service
 public class DubboApiServiceImpl implements DubboApiService {
 
     @Override
