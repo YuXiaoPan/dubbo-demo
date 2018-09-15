@@ -6,8 +6,7 @@
        http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
        http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
 
-    <dubbo:application name="dubbo-api-providor1"/>
+    <dubbo:application name="dubbo-api-consumer1"/>
     <dubbo:registry protocol="zookeeper" address="multicast://224.5.6.7:1234"/>
     <dubbo:protocol name="dubbo" port="-1"/>
-    <dubbo:annotation package="me.peyppicp.service.api.impl"/>
 </beans>

@@ -3,14 +3,6 @@ spring:
     name: dubbo-api-consumer1
 server:
   port: 9091
-dubbo:
-  application:
-    id: dubbo-api-consumer-id1
-    name: dubbo-api-consumer-demo1
-  registry:
-    protocol: zookeeper
-    address: localhost:2181
-    id: lin-registry-1
 management:
   endpoint:
     dubbo-configs:
