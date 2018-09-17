@@ -7,7 +7,7 @@
        http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
 
     <dubbo:application name="dubbo-api-providor1"/>
-    <dubbo:registry protocol="zookeeper" address="multicast://224.5.6.7:1234"/>
-    <dubbo:protocol name="dubbo" port="-1"/>
+    <dubbo:registry protocol="zookeeper" address="localhost:2181"/>
+    <dubbo:protocol name="dubbo" port="-1" threads="200"/>
     <dubbo:annotation package="me.peyppicp.service.api.impl"/>
 </beans>
